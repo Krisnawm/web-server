@@ -1,0 +1,255 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8F8FF;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 5px 10px;
+    background: #DC143C;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    color: #fff;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    width: 250px; /*ubah nanti 250 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #333333;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 2px;
+    background: #d11141;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.3em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #333333;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 1.1em !important;
+    padding-left: 30px !important;
+    background: #333333;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 1.0em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+a.article, a.article:hover {
+    background: #333333 !important;
+    color: #fff !important;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 230px);
+    padding: 0px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#content.active {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/* NEW */
+body {
+    margin: 20px auto;
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 12px;
+    color: #444;
+    }
+
+.lnk {
+    TEXT-DECORATION: none;
+    COLOR: #000000;
+    }
+
+.tbl {
+    BORDER-RIGHT: black 2px solid;
+    BORDER-TOP: black 2px solid;
+    BORDER-LEFT: black 2px solid;
+    BORDER-BOTTOM: black 2px solid;
+    BACKGROUND-COLOR: #ffffff;
+    border-collapse: collapse;
+    BORDER-COLOR: #c0c0c0;
+    }
+
+.hdr {
+    BORDER-BOTTOM: black 2px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BACKGROUND: #00bfff;
+    padding: 4px;
+    FONT-SIZE: 12px;
+    BORDER-COLOR: #c0c0c0;
+    COLOR: #ffffff;
+    }
+
+.isi {
+    BORDER-TOP: black 1px solid;
+    BORDER-BOTTOM: black 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BACKGROUND: #ffffff;
+    FONT-SIZE: 11px;
+    padding: 2px;
+    white-space: nowrap;
+    BORDER-COLOR: #c0c0c0;
+    }
+
+    .tr3 {
+    BORDER-TOP: black 1px solid;
+    BORDER-BOTTOM: black 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BACKGROUND: #33fff3;
+    FONT-SIZE: 11px;
+    padding: 2px;
+    white-space: nowrap;
+    BORDER-COLOR: #c0c0c0;
+    }
+
+/* ---------------------------------------------------
+    UKURAN
+----------------------------------------------------- */
+#content2 {
+    padding: 40px;
+}
+#warna {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+img{
+    height: 207%;
+    width: 207%;
+    text-align: center;
+}
